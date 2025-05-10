@@ -22,6 +22,5 @@ def generateImportStatements (folderPath, fObj, startIndex, arrayName):
     return num
 
 with open("import-statements.js", "w") as f:
-    nextStart = generateImportStatements('../photography-webpage/src/assets/concerts', f, 0, "concerts")
-    nextStart = generateImportStatements('../photography-webpage/src/assets/trips', f, nextStart, "trips")
-    nextStart = generateImportStatements('../photography-webpage/src/assets/other', f, nextStart, "other")
+    nextStart = generateImportStatements('./assets/folder1', f, 0, "folder1")
+    nextStart = generateImportStatements('./assets/folder2', f, nextStart, "folder2")
